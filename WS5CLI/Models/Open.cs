@@ -19,10 +19,10 @@ namespace WS5CLI.Models
             Process process = new Process();
             if (filePath != null)
             {
-                process.StartInfo = new ProcessStartInfo()
+                process.StartInfo = new ProcessStartInfo(@"" + exePath)
                 {
 
-                    WindowStyle = ProcessWindowStyle.Minimized,
+                    //WindowStyle = ProcessWindowStyle.Minimized,
                     FileName = @"" + exePath,
                     Arguments = @"" + filePath
 
@@ -33,7 +33,7 @@ namespace WS5CLI.Models
                 process.StartInfo = new ProcessStartInfo()
                 {
 
-                    WindowStyle = ProcessWindowStyle.Minimized,
+                    //WindowStyle = ProcessWindowStyle.Minimized,
                     FileName = @"" + exePath
 
                 };

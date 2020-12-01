@@ -53,7 +53,7 @@ namespace WS5CLI.Controllers
             switch (keyWord)
             {
                 case "open":
-                    if(arguments.Count() == 1)
+                    if (arguments.Count() == 1)
                     {
                         this.open.CreateProcess(arguments[0]);
                     }
@@ -61,7 +61,6 @@ namespace WS5CLI.Controllers
                     {
                         this.open.CreateProcess(arguments[0], arguments[1]);
                     }
-                    
                     break;
                 case "edit":
                     break;
