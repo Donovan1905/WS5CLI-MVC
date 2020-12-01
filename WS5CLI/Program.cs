@@ -1,4 +1,5 @@
 ﻿using System;
+using WS5CLI.Controllers;
 
 namespace WS5CLI
 {
@@ -6,7 +7,8 @@ namespace WS5CLI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller controller = new Controller();
+            controller.Start();
         }
     }
 }
